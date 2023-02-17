@@ -23,16 +23,16 @@ type Author struct {
 */
 
 type FidiboBook struct {
-	AllBook Books `json:"books"`
+	AllBooks Books `json:"books"`
 }
 
 type Books struct {
-	AllHit Hits `json:"hits"`
+	AllHits Hits `json:"hits"`
 }
 type Hits struct {
-	AllHit []Source `json:"hits"`
+	AllSources []Source `json:"hits"`
 }
 
 type Source struct {
-	Boo Book `json:"_source"`
+	Bk Book `json:"_source"`
 }
