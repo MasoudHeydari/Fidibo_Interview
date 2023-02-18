@@ -3,8 +3,9 @@ This is a Task which is assigned to me during interview process for Fidibo compa
 
 ### How to Run?
 To run the Project:
-* run the `create_db.sql` scrip in `adapter/store/sql` folder to create our database to store Users.
-* run `docker compose up` and enjoy the project.
+* run `docker compose up` command and this will bring up everything for us.
+* then run the `create_db.sql` scrip in `adapter/store/sql` folder to create our `fidibo` database to store Users.
+* now you can send your requests to below endpoints via Postman.
 
 ### How to Send Request
 There is three endpoints:
