@@ -1,0 +1,31 @@
+package v1
+
+import (
+	"fidibo_interview/adapter/store"
+	"fidibo_interview/contract"
+	"fidibo_interview/dto"
+	"fidibo_interview/interactor/user"
+	"github.com/labstack/echo/v4"
+	"net/http"
+)
+
+func CreateUser(store store.MySQLStore, validator contract.ValidateCreateUser) echo.HandlerFunc {
+	return func(c echo.Context) error {
+
+		var req = dto.CreateUserRequest{}
+		if err := c.Bind(&req); err != nil {
+			return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+		}
+
+		if err := validator(req); err != nil {
+			return echo.NewHTTPError(http.StatusUnprocessableEntity, err.Error())
+		}
+
+		resp, err := user.New(store).CreateUser(c.Request().Context(), req)
+		if err != nil {
+			return echo.NewHTTPError(http.StatusInternalServerError, err.Error())
+		}
+
+		return c.JSON(http.StatusOK, resp)
+	}
+}
