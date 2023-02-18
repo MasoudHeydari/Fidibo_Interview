@@ -4,10 +4,13 @@ This is a Task which is assigned to me during interview process for Fidibo compa
 ### How to Run?
 To run the Project:
 * run `docker compose up` command and this will bring up everything for us.
-* then run the `create_db.sql` scrip in `adapter/store/sql` folder to create our `fidibo` database to store Users.
-* now you can send your requests to below endpoints via Postman.
+* then run the `create_db.sql` scrip in `adapter/store/sql` folder to create our `fidibo` database to store Users.  
+  
+now you can send your requests to below endpoints via Postman.  
 
-### How to Send Request
+  
+    
+### How to Send Request?
 There is three endpoints:
 * `/register`: creates a new user to be able to use main functionality of the project, which is calling and API from Fidibo.
 * `/login`: this end point generate a valid jwt token for already registered users. you must put the token inside your header for calling the `/search/book` endpoint.
