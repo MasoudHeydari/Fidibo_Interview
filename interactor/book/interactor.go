@@ -28,7 +28,7 @@ func (i Interactor) SearchBook(ctx context.Context, req dto.SearchBookRequest) (
 		// cache hit
 		log.Println("cache hit")
 		return dto.SearchBookResponse{
-			Result: make([]entity.Book, 0)}, nil
+			Result: *cachedBooks}, nil
 	}
 
 	// cache missed
