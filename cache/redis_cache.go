@@ -46,13 +46,13 @@ func (cache *redisCache) Set(key string, post *[]entity.Book) error {
 func (cache *redisCache) Get(key string) (*[]entity.Book, error) {
 	client := cache.getClient()
 
-	val, err := client.Get(key).Result()
+	result, err := client.Get(key).Bytes()
 	if err != nil {
 		return nil, nil
 	}
 
 	books := make([]entity.Book, 0)
-	err = json.Unmarshal([]byte(val), &books)
+	err = json.Unmarshal(result, &books)
 	if err != nil {
 		return nil, err
 	}
