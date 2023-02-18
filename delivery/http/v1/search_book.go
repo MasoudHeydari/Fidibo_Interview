@@ -1,20 +1,21 @@
 package v1
 
 import (
+	"fidibo_interview/contract"
 	"fidibo_interview/dto"
-	"fidibo_interview/interactor"
+	"fidibo_interview/interactor/book"
 	"github.com/labstack/echo/v4"
 	"net/http"
 )
 
-func SearchBook() echo.HandlerFunc {
+func SearchBook(redisCache contract.BookCache) echo.HandlerFunc {
 	return func(c echo.Context) error {
 		q := c.QueryParam("keyword")
 		req := dto.SearchBookRequest{
 			Keyword: q,
 		}
 
-		resp, err := interactor.New().SearchBook(c.Request().Context(), req)
+		resp, err := book.New(redisCache).SearchBook(c.Request().Context(), req)
 		if err != nil {
 			return echo.NewHTTPError(http.StatusInternalServerError, err.Error())
 		}
