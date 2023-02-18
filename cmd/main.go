@@ -6,7 +6,6 @@ import (
 	"fidibo_interview/config"
 	v1 "fidibo_interview/delivery/http/v1"
 	"fidibo_interview/validator"
-	"fmt"
 	"github.com/labstack/echo/v4"
 	"log"
 )
@@ -21,7 +20,6 @@ func main() {
 		log.Fatal("failed to extract the cache duration - err: ", err)
 	}
 	bookCache := cache.NewRedisCache(config.GetRedisDsn(), 1, cacheDur)
-	fmt.Println("cache started")
 
 	// initialize Echo
 	e := echo.New()
