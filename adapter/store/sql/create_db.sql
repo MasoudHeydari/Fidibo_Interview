@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS fidibo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE fidibo;
