@@ -1,6 +1,6 @@
 package store
 
-import "fidibo_interview/entity"
+import "github.com/MasoudHeydari/Fidibo_Interview/entity"
 
 type User struct {
 	ID       uint   `json:"id" gorm:"primary_key"`

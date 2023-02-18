@@ -1,7 +1,7 @@
 package validator
 
 import (
-	"fidibo_interview/dto"
+	"github.com/MasoudHeydari/Fidibo_Interview/dto"
 	validation "github.com/go-ozzo/ozzo-validation"
 	"github.com/go-ozzo/ozzo-validation/is"
 )

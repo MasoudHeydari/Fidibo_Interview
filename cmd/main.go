@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fidibo_interview/adapter/store"
-	"fidibo_interview/cache"
-	"fidibo_interview/config"
-	v1 "fidibo_interview/delivery/http/v1"
-	"fidibo_interview/validator"
+	"github.com/MasoudHeydari/Fidibo_Interview/adapter/store"
+	"github.com/MasoudHeydari/Fidibo_Interview/cache"
+	"github.com/MasoudHeydari/Fidibo_Interview/config"
+	v1 "github.com/MasoudHeydari/Fidibo_Interview/delivery/http/v1"
+	"github.com/MasoudHeydari/Fidibo_Interview/validator"
 	"github.com/labstack/echo/v4"
 	"log"
 )

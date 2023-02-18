@@ -1,4 +1,4 @@
-module fidibo_interview
+module github.com/MasoudHeydari/Fidibo_Interview
 
 go 1.17
 

@@ -1,10 +1,10 @@
 package v1
 
 import (
-	"fidibo_interview/adapter/store"
-	"fidibo_interview/contract"
-	"fidibo_interview/dto"
-	"fidibo_interview/interactor/user"
+	"github.com/MasoudHeydari/Fidibo_Interview/adapter/store"
+	"github.com/MasoudHeydari/Fidibo_Interview/contract"
+	"github.com/MasoudHeydari/Fidibo_Interview/dto"
+	"github.com/MasoudHeydari/Fidibo_Interview/interactor/user"
 	"github.com/labstack/echo/v4"
 	"net/http"
 )

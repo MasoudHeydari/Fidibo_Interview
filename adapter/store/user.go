@@ -2,7 +2,7 @@ package store
 
 import (
 	"context"
-	"fidibo_interview/entity"
+	"github.com/MasoudHeydari/Fidibo_Interview/entity"
 )
 
 func (m MySQLStore) CreateUser(ctx context.Context, user entity.User) (entity.User, error) {

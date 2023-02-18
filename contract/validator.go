@@ -1,6 +1,6 @@
 package contract
 
-import "fidibo_interview/dto"
+import "github.com/MasoudHeydari/Fidibo_Interview/dto"
 
 type (
 	ValidateCreateUser func(req dto.CreateUserRequest) error

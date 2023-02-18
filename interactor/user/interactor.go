@@ -2,12 +2,12 @@ package user
 
 import (
 	"context"
-	"fidibo_interview/auth"
-	"fidibo_interview/config"
-	"fidibo_interview/contract"
-	"fidibo_interview/dto"
-	"fidibo_interview/entity"
 	"fmt"
+	"github.com/MasoudHeydari/Fidibo_Interview/auth"
+	"github.com/MasoudHeydari/Fidibo_Interview/config"
+	"github.com/MasoudHeydari/Fidibo_Interview/contract"
+	"github.com/MasoudHeydari/Fidibo_Interview/dto"
+	"github.com/MasoudHeydari/Fidibo_Interview/entity"
 	"time"
 )
 

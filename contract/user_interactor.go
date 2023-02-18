@@ -2,7 +2,7 @@ package contract
 
 import (
 	"context"
-	"fidibo_interview/dto"
+	"github.com/MasoudHeydari/Fidibo_Interview/dto"
 )
 
 type UserInteractor interface {

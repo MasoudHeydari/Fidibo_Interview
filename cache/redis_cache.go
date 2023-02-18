@@ -2,8 +2,8 @@ package cache
 
 import (
 	"encoding/json"
-	"fidibo_interview/contract"
-	"fidibo_interview/entity"
+	"github.com/MasoudHeydari/Fidibo_Interview/contract"
+	"github.com/MasoudHeydari/Fidibo_Interview/entity"
 	"github.com/go-redis/redis/v7"
 	"time"
 )

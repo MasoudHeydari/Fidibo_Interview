@@ -3,10 +3,10 @@ package book
 import (
 	"context"
 	"encoding/json"
-	"fidibo_interview/contract"
-	"fidibo_interview/dto"
-	"fidibo_interview/entity"
 	"fmt"
+	"github.com/MasoudHeydari/Fidibo_Interview/contract"
+	"github.com/MasoudHeydari/Fidibo_Interview/dto"
+	"github.com/MasoudHeydari/Fidibo_Interview/entity"
 	"log"
 	"net/http"
 )

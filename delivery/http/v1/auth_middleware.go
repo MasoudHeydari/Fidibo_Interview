@@ -2,9 +2,9 @@ package v1
 
 import (
 	"errors"
-	"fidibo_interview/auth"
-	"fidibo_interview/config"
 	"fmt"
+	"github.com/MasoudHeydari/Fidibo_Interview/auth"
+	"github.com/MasoudHeydari/Fidibo_Interview/config"
 	"github.com/labstack/echo/v4"
 	"net/http"
 	"strings"

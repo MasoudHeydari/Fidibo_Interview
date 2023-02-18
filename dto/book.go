@@ -1,6 +1,6 @@
 package dto
 
-import "fidibo_interview/entity"
+import "github.com/MasoudHeydari/Fidibo_Interview/entity"
 
 type SearchBookRequest struct {
 	Keyword string `json:"keyword"`

@@ -1,6 +1,6 @@
 package contract
 
-import "fidibo_interview/entity"
+import "github.com/MasoudHeydari/Fidibo_Interview/entity"
 
 type BookCache interface {
 	Set(key string, value *[]entity.Book) error
