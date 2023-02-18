@@ -1,0 +1,17 @@
+{
+  "http_address": "0.0.0.0",
+  "port": "8080",
+
+  "db_username": "root",
+  "db_pass": "secret",
+  "db_name": "fidibo",
+  "db_address": "db",
+  "db_port": "3306",
+
+  "cache_name" : "bookcache",
+  "cache_port": "6379",
+  "cache_password" : "",
+  "cache_duration" : "10",
+
+  "auth_secret_key" : "fe655f46-c2eb-4560-a435-9673c4b919ac"
+}
